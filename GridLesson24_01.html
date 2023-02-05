@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      /*Это первый вариант который я сделал самостоятельно*/
+
+      /* .wrapper {
+        display: grid;
+        border: 1px solid black;
+        height: 100vh;
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        gap: 5px;
+        padding: 5px;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "menu content content"
+          "Center Center Center"
+          "Block AnotherBlock footer";
+      } */
+      .wrapper {
+        display: grid;
+        border: 1px solid black;
+        background-color: aqua;
+        width: 600px;
+        height: auto;
+        gap: 5px;
+        grid-template-rows: repeat(3, 200px);
+        grid-template-columns: repeat(5, 1fr);
+
+      }
+      #id_1 {
+        /* grid-area: menu; */
+
+        background-color: tomato;
+      }
+      #id_2 {
+        /* grid-area: content; */
+        /* grid-column-start: 2;
+        grid-column-end: 6; */
+        grid-area:auto / span 4 ;
+        
+        background-color: orange;
+      }
+      #id_3 {
+        /* grid-area: footer; */
+        /* grid-column-start: 1;
+        grid-column-end: 6; */
+        grid-area:auto / span 5;
+        
+        background-color: olive;
+      }
+      #id_4 {
+        /* grid-area: Block; */
+        background-color: blue;
+      }
+      #id_5 {
+        /* grid-area: AnotherBlock; */
+        /* grid-column-start: 2;
+        grid-column-end: 5; */
+        grid-area:auto / span 3 ;
+        background-color: red;
+      }
+      #id_6 {
+        /* grid-area: Center; */
+        background-color: purple;
+      }
+      .item_tomato,
+      .item_orange,
+      .item_olive,
+      .item_blue,
+      .item_red,
+      .item_purple {
+        border: 1px solid pink;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="id_1" class="item_tomato">Menu</div>
+      <div id="id_2" class="item_orange">Content</div>
+      <div id="id_3" class="item_olive">Footer</div>
+      <div id="id_4" class="item_blue">Block</div>
+      <div id="id_5" class="item_red">Another block</div>
+      <div id="id_6" class="item_purple">Center</div>
+    </div>
+  </body>
+</html>

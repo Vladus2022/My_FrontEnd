@@ -1,0 +1,164 @@
+.wrapper {
+    padding-left: 405px;
+    padding-right: 405px;
+}
+
+.header {
+    height: 740px;
+    background-image: url(./images/first.png);
+    background-size: cover;
+    padding-top: 192px;
+}
+
+.header h1 {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0 auto;
+  
+    font-size: 64px;
+    line-height: 125px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.header h4 {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+}
+
+.years-on-market {
+    padding: 75px 130px;
+    background-color: #FFFFFF;
+    height: 100%;
+    display: flex;
+    }
+
+    .years-on-market-list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .years-on-market-list li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .years-on-market-list li span.years-count {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 107px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #F7654A; 
+    }
+
+    .years-on-market-list li span.years {
+        font-size: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 53px;
+    }
+
+
+
+.content {
+    
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.content h2 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #404149;
+    
+}
+
+.biggest-projects {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.project-title h3 {
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #404149;
+
+}
+
+.query {
+    height: 181px;
+    background-color: #F7654A;
+}
+
+.query .query-text {
+    color: #FFFFFF;
+}
+
+.query .query-text .big-text {
+    font-size: 48px;
+}
+
+.query .query-text .small-text {
+    font-size: 24px;
+}
+
+.our-work {
+
+}
+
+/* .query {
+    height: 181px;
+    background-color: #F7654A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.query .query-text {
+    color: #FFFFFF;
+}
+
+.query .query-text .big-text {
+    font-size: 48px;
+}
+
+.query .query-text .small-text {
+    font-size: 24px;
+}
+
+.query .query-text .big-text, .query .query-text .small-text {
+    display: block;
+}
+
+.query-text, .your-query {
+    border: none;
+    padding: 13px 47px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #000000;
+} */

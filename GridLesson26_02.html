@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .rectangle {
+        height: 500px;
+        aspect-ratio: 1;
+        background-color: tomato;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        color: blueviolet;
+        display: none;
+       
+      }
+      @media screen and (min-width: 768px) and (max-width: 1200px)     {
+        .rectangle {
+          background-color: olive;
+         }
+         .hello {
+          color: white;
+          display: contents;
+         }
+      }
+      @media screen and (min-width: 1200px) {
+        .rectangle {
+            background-color: black;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="rectangle">
+      <h1 class="hello">Hello everybody!</h1>
+    </div>
+  </body>
+</html>
