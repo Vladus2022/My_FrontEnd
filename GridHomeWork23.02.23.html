@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GridHome</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        width: 1200px;
+        height: auto;
+        border: 1px solid black;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, 120px);
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: auto / span 3;
+        background-color: #fff2cd;
+      }
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: auto / span 9;
+        background-color: #dae8fb;
+      }
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: auto / span 12;
+        grid-row: 2 / 6;
+
+        background-color: #d4e9d3;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1 / 5;
+        grid-row: 6 / 10;
+        background-color: #e3d4e7;
+      }
+      .smal-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: auto / span 3;
+        grid-row: 6 /8;
+        background-color: #ffe7cd;
+      }
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 8 / 13;
+        grid-row: 6 / 8;
+        background-color: #f7cdcc;
+      }
+      .extra {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-column: 5 / 13;
+        grid-row: 8 / 10;
+        background-color: #1ba0e2;
+      }
+      .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: auto / span 12;
+        background-color: #b0e2e6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="logo">LOGO</div>
+      <div class="menu">MENU</div>
+      <div class="header">HEADER</div>
+      <div class="content">CONTENT</div>
+      <div class="smal-content">CONTENT</div>
+      <div class="image">IMAGE</div>
+      <div class="extra">EXTRA</div>
+      <div class="footer">FOOTER</div>
+    </div>
+  </body>
+</html>
