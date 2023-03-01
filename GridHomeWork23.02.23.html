@@ -21,41 +21,33 @@
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(10, 120px);
       }
-      .logo {
+
+      .wrapper > div {
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+      
+      .logo {
         grid-area: auto / span 3;
         background-color: #fff2cd;
       }
       .menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         grid-area: auto / span 9;
         background-color: #dae8fb;
       }
       .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         grid-area: auto / span 12;
         grid-row: 2 / 6;
 
         background-color: #d4e9d3;
       }
       .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         grid-column: 1 / 5;
         grid-row: 6 / 10;
         background-color: #e3d4e7;
       }
       .smal-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         grid-area: auto / span 3;
         grid-row: 6 /8;
         background-color: #ffe7cd;
@@ -69,18 +61,12 @@
         background-color: #f7cdcc;
       }
       .extra {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         grid-column: 5 / 13;
         grid-row: 8 / 10;
         background-color: #1ba0e2;
         color: #fff;
       }
       .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         grid-area: auto / span 12;
         background-color: #b0e2e6;
       }
