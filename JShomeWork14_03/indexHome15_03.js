@@ -79,7 +79,8 @@
 //         break;
 //       }
 
-// }console.log(`Your correct inputed num : ${sum}`); //это что бы посмотреть какие цифры были введены корректно
+// }
+// console.log(`Your correct inputed num : ${sum}`); //это что бы посмотреть какие цифры были введены корректно
 
 
 

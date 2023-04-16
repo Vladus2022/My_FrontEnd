@@ -1,7 +1,11 @@
 // Дан массив ["John", "Peter", "David", "Lambert", "Eddie", "Janett", "Franz"]; Вырезать из массива "David", "Lambert", "Eddie" и записать их в отдельный массив
 
 
-let arr = ["John", "Peter", "David", "Lambert", "Eddie", "Janett", "Franz"];
+// let arr = ["John", "Peter", "David", "Lambert", "Eddie", "Janett", "Franz"];
+
+
+// console.log(arr.slice(0,-3));
+// console.log(Math.pow(2,50));
 
 // let arr2 = arr.slice(2, 5);
 
@@ -79,3 +83,4 @@ let arr = ["John", "Peter", "David", "Lambert", "Eddie", "Janett", "Franz"];
 // strMama.pop();
 // strMama.push(someWord)
 // console.log(strMama.join(' '));
+
