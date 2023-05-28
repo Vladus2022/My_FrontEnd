@@ -2,18 +2,18 @@
 
 //Сделайте запрос по адресу https://reqes.in/api/users?page=1, обработайте ответ и выведите в консоль только тех юзеров у которых в поле last_name не менее 5ти символов
 
-fetch("https://reqres.in/api/users?page=1")
-  .then((reqObj) => {
-    return reqObj.json();
-  })
-  .then(({ data }) => {
-    data.forEach((obj) => {
-      if (obj.first_name.length >= 5) {
-        console.log(obj);
-        console.log(obj.first_name);
-      }
-    });
-  });
+// fetch("https://reqres.in/api/users?page=1")
+//   .then((reqObj) => {
+//     return reqObj.json();
+//   })
+//   .then(({ data }) => {
+//     data.forEach((obj) => {
+//       if (obj.first_name.length >= 5) {
+//         console.log(obj);
+//         console.log(obj.first_name);
+//       }
+//     });
+//   });
 
 //Сделайте запрос по адресу https://reqes.in/api/users?page=1, обработайте ошибку этого запроса и выведите в консоль Не удалось загрузить данные
 
@@ -39,7 +39,7 @@ fetch("https://reqres.in/api/users?page=1")
     return emmaWang;
   })
   .then((emma) => {
-    return fetch("https://reqres.in/api/users/${emma.id}");
+    return fetch(`https://reqres.in/api/users/${emma.id}`);
   })
   .then((reqObj) => {
     return reqObj.json();
@@ -48,4 +48,6 @@ fetch("https://reqres.in/api/users?page=1")
     console.log("emmas data", data);
   });
 
-  //ВЛАДИСЛАВ!!!!! Не могу понять почему у меня во втором fetch  ${emma.id} не читается как аргумент?????
+//ВЛАДИСЛАВ!!!!! Не могу понять почему у меня во втором fetch  ${emma.id} не читается как аргумент?????
+
+// Владислав!!!!! Разобрался!!!!!!  БЭКТИКИ.......
