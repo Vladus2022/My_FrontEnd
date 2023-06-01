@@ -39,18 +39,11 @@ const playing = ({ target }) => {
   const random = Math.round(Math.random() * 2);
   computerChois.innerText = `The computer has chosen : ${arrButtons[random].innerText}`;
   if (
-    target.innerText === "STONE" &&
-    arrButtons[random].innerText === "SCISSORS"
-  ) {
-    result.innerText = "YOU WIN";
-  } else if (
-    target.innerText === "SCISSORS" &&
-    arrButtons[random].innerText === "PAPER"
-  ) {
-    result.innerText = "YOU WIN";
-  } else if (
-    target.innerText === "PAPER" &&
-    arrButtons[random].innerText === "STONE"
+    (target.innerText === "STONE" &&
+      arrButtons[random].innerText === "SCISSORS") ||
+    (target.innerText === "SCISSORS" &&
+      arrButtons[random].innerText === "PAPER") ||
+    (target.innerText === "PAPER" && arrButtons[random].innerText === "STONE")
   ) {
     result.innerText = "YOU WIN";
   } else if (target.innerText === arrButtons[random].innerText) {
